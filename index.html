@@ -27,7 +27,7 @@
             border: 2px white solid;
         }
 
-        section {
+        .section {
             margin-top: 3rem;
         }
 
@@ -64,7 +64,11 @@
             font-size: 8vw;
         }
 
-
+        .container-fluid {
+            background-color: rgb(218, 232, 252);
+            padding-top: 15px;
+            padding-bottom: 65px;
+        }
 
         /* MEDIA QUERIES */
         @media screen and (max-width: 600px) {
@@ -72,8 +76,6 @@
                 height: 15em;
             }
         }
-
-     
     </style>
 </head>
 
@@ -111,8 +113,7 @@
         </div>
     </nav>
 
-    <div class="container">
-
+    <div class="container section">
         <section id="service-info">
             <div>
                 <h2>Memorial Service and Additional Information</h2>
@@ -149,7 +150,42 @@
                 </p>
             </div>
         </section>
+    </div>
 
+    <div class="container-fluid section">
+        <div class="container section">
+            <section id="story-section">
+                <h2>
+                    Share your stories of Mark:
+                </h2>
+                <hr class="mt-2 mb-5">
+                <p>
+                    Our father was a storyteller, or a teller of the same stories over and over again. Help us remember
+                    his
+                    stories by writing down your favorite memories of Mark on the day of the event or by e-mailing his
+                    family. These will be collated
+                    and shared with close family.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Name</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Story</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <div class="container section">
         <section id="image-section">
             <h2>Gallery</h2>
             <hr class="mt-2 mb-5">
@@ -291,35 +327,9 @@
                 </div>
             </div>
         </section>
-
-        <section id="story-section">
-            <h2>
-                Share your stories of Mark:
-            </h2>
-            <hr class="mt-2 mb-5">
-            <p>
-                Our father was a storyteller, or a teller of the same stories over and over again. Help us remember his
-                stories by writing down your favorite memories of Mark on the day of the event or by e-mailing his
-                family. These will be collated
-                and shared with close family.
-            </p>
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" required>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Story</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </section>
     </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
