@@ -24,7 +24,6 @@
 
         .main_mark {
             width: 20em;
-            /* max-width: 100%; */
             border-radius: 50%;
             border: 2px white solid;
         }
@@ -45,14 +44,6 @@
             float: none;
         }
 
-        .btn:focus,
-        .btn:active,
-        button:focus,
-        button:active {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-
         #image-gallery .modal-footer {
             display: block;
         }
@@ -64,6 +55,11 @@
 
         h1 {
             font-size: 8vw;
+            font-family: Georgia;
+        }
+
+        h2{
+            font-family: Georgia;
         }
 
         .container-fluid {
@@ -72,10 +68,28 @@
             padding-bottom: 65px;
         }
 
-        .footer{
+        .footer {
             background-color: #eee;
             text-align: center;
             padding-bottom: 15px;
+        }
+
+        .fam-pic {
+            float: right;
+            width: 330px;
+            height: 200px;
+            margin-left: 15px;
+        }
+
+        .firstcharacter {
+            color: rgb(27, 21, 75);
+            float: left;
+            font-family: Georgia;
+            font-size: 75px;
+            line-height: 60px;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-left: 3px;
         }
 
         /* MEDIA QUERIES */
@@ -85,12 +99,18 @@
             }
 
             .main_mark {
-            width: 7em;
+                width: 7em;
             }
 
-            .row{
-                margin-right: 0!important;
-                margin-left: 0!important;
+            /* Removing weird mobile page drag */
+            .row {
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+            }
+
+            .fam-pic {
+                width: 100%;
+                margin-bottom: 20px;
             }
         }
     </style>
@@ -132,13 +152,13 @@
             <div>
                 <h2>Memorial Service and Additional Information</h2>
                 <hr class="mt-2 mb-5">
-                <img style='float:right;width:200px;height:200px; margin-left:15px;' src="images/gallery-main/IMG_0559.JPG" class="thumbnail"/>
+                <img src="images/gallery-main/IMG_0559.JPG" class="thumbnail fam-pic" />
                 <p>
-                    We will be holding a small memorial service for our father at one of his favorite locations in Santa
+                    <span class="firstcharacter">W</span> e will be holding a small memorial service for our father at
+                    one of his favorite locations in Santa
                     Barbara-- the Voskly Prayer Chapel Westmont College. This was the location of our parents’ wedding
                     and frequent family trips. Due to the limited capacity of the venue, we are limiting the service to
-                    close family and friends. We also believe our father would not have wanted anything large and we
-                    would prefer something more intimate as well.
+                    close family and friends.
                 </p>
 
                 <p>
@@ -181,7 +201,7 @@
                     family. These will be collated
                     and shared with close family.
                 </p>
-                <form>
+                <form method="post" action="https://formspree.io/wendymaldonado.la@gmail.com">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Name</label>
                         <input type="text" class="form-control" id="exampleInputPassword1" required>
@@ -193,7 +213,8 @@
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Story</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <small id="msg" class="form-text text-muted">Stories will be sent to NAME and be shared with family.</small>
+                        <small id="msg" class="form-text text-muted">Stories will be sent to NAME and be shared with
+                            family.</small>
                     </div>
                     <button type="submit" class="btn btn-primary">Send</button>
                 </form>
@@ -204,52 +225,51 @@
     <div class="container section">
         <section id="image-section">
             <h2>Gallery</h2>
+
             <hr class="mt-2 mb-5">
+
             <div class="row">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                            data-image="images/gallery-main/IMG_0014.JPG"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="images/gallery-main/IMG_0014.JPG"
-                                alt="Another alt text">
+                            data-image="images/gallery-main/top8_1.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="images/gallery-main/top8_1.jpg" alt="Another alt text">
                         </a>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                            data-image="images/gallery-main/IMG_0560.JPG"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="images/gallery-main/IMG_0560.JPG"
-                                alt="Another alt text">
+                            data-image="images/gallery-main/top8_4.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="images/gallery-main/top8_4.jpg" alt="Another alt text">
                         </a>
                     </div>
-
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                            data-image="images/gallery-main/school-mark.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="images/gallery-main/school-mark.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                            data-image="images/gallery-main/mark-teen.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="images/gallery-main/mark-teen.jpg" alt="Another alt text">
+                        </a>
+                    </div>
                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                            data-image="images/gallery-main/IMG_0003.JPG"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="images/gallery-main/IMG_0003.JPG"
-                                alt="Another alt text">
+                            data-image="images/gallery-main/IMG_0560.JPG" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="images/gallery-main/IMG_0560.JPG" alt="Another alt text">
                         </a>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
-                            data-image="images/gallery-main/siblings"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="images/gallery-main/siblings.jpg"
-                                alt="Another alt text">
+                            data-image="images/gallery-main/siblings" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="images/gallery-main/siblings.jpg" alt="Another alt text">
                         </a>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
-                            data-image="images/gallery-main/mark-marlene.jpg"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="images/gallery-main/mark-marlene.jpg"
+                            data-image="images/gallery-main/mark-marlene.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="images/gallery-main/mark-marlene.jpg"
                                 alt="Another alt text">
                         </a>
                     </div>
@@ -258,61 +278,50 @@
 
                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
-                            data-image="images/gallery-main/siblings4.jpg"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="images/gallery-main/siblings4.jpg"
-                                alt="Another alt text">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
-                            data-image="images/gallery-main/school-mark.jpg"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="images/gallery-main/school-mark.jpg"
-                                alt="Another alt text">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
-                            data-image="images/gallery-main/mark-teen.jpg"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="images/gallery-main/mark-teen.jpg"
-                                alt="Another alt text">
+                            data-image="images/gallery-main/siblings4.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="images/gallery-main/siblings4.jpg" alt="Another alt text">
                         </a>
                     </div>
 
 
 
-                    <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
-                            data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                alt="Another alt text">
-                        </a>
+
+                    <div id="morePics" class="collapse">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                    data-title="Im so nice"
+                                    data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                    data-target="#image-gallery">
+                                    <img class="img-thumbnail"
+                                        src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                        alt="Another alt text">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                    data-title="Im so nice"
+                                    data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                    data-target="#image-gallery">
+                                    <img class="img-thumbnail"
+                                        src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                        alt="Another alt text">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                    data-title="Im so nice"
+                                    data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                    data-target="#image-gallery">
+                                    <img class="img-thumbnail"
+                                        src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                        alt="Another alt text">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
-                            data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                alt="Another alt text">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
-                            data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            data-target="#image-gallery">
-                            <img class="img-thumbnail"
-                                src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                alt="Another alt text">
-                        </a>
-                    </div> -->
+
+
                 </div>
 
 
@@ -343,7 +352,7 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary float-right">See more photos...</button>
+            <button type="button" class="btn btn-primary float-right" id="btnExpandMorePics">See more photos...</button>
         </section>
     </div>
 
@@ -367,6 +376,21 @@
 
         $(document)
             .ready(function () {
+
+                var btn = $('#button');
+
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 3000) {
+                        btn.addClass('show');
+                    } else {
+                        btn.removeClass('show');
+                    }
+                });
+
+                btn.on('click', function (e) {
+                    e.preventDefault();
+                    $('html, body').animate({ scrollTop: 0 }, '300');
+                });
 
                 loadGallery(true, 'a.thumbnail');
 
@@ -423,6 +447,13 @@
                         .on('click', function () {
                             updateGallery($(this));
                         });
+                }
+
+                $("#btnExpandMorePics").on("click", handle_btnExpandMorePics);
+
+                function handle_btnExpandMorePics() {
+                    console.log("clicked");
+                    $("#morePics").show();
                 }
             });
 
