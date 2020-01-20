@@ -23,6 +23,8 @@
         }
 
         .main_mark {
+            width: 20em;
+            /* max-width: 100%; */
             border-radius: 50%;
             border: 2px white solid;
         }
@@ -77,9 +79,13 @@
         }
 
         /* MEDIA QUERIES */
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 700px) {
             .jumbotron {
                 height: 15em;
+            }
+
+            .main_mark {
+            width: 7em;
             }
         }
     </style>
@@ -88,7 +94,7 @@
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <img src="images/mark-dinner.JPG" class="float-right img-fluid main_mark">
+            <img src="images/mark-main-square.jpg" class="float-right main_mark">
             <h1 style="font-size:6.5vw;">Mark Mulholland</h1>
             <h2 style="font-size:3.5vw;">Mulholland, Papa, Paha</h2>
             <p style="font-size:3.5vw;"><b>1952 - 2020</b></p>
@@ -103,9 +109,6 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <!-- <li class="nav-item active">
-                    <a class="nav-link " href="#">Main <span class="sr-only">(current)</span></a>
-                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="#story-section">Stories</a>
                 </li>
